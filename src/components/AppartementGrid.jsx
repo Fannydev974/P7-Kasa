@@ -1,9 +1,17 @@
 import React from 'react'
-import "./AppartementGrid.css";
+import "./AppartementGrid.scss";
+import Location from "./Location.jsx";
 
 function AppartementGrid() {
     return (
-        <div className='grid'>AppartementGrid</div>
+        <div className="grid">
+            <Location />
+            <Location />
+            <Location />
+            <Location />
+            <Location />
+            <Location />
+        </div>
     )
 }
 
