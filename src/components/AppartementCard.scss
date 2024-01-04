@@ -9,11 +9,11 @@
     align-items: end;
     min-width: 240px;
     min-height: 200px;
-}
 
-@media screen and (width <=768px) {
-    .Location {
-        flex-basis: 100%;
+    @media screen and (width <=768px) {
+        .Location {
+            flex-basis: 100%;
+        }
     }
 }
 
