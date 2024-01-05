@@ -1,8 +1,10 @@
 import React from 'react'
 import { createBrowserRouter, Outlet } from 'react-router-dom';
-import App from "../App";
+import HomePage from "../Page/HomePage";
 import Footer from "../Layout/Footer";
-import Navbar from '../components/Navbar';
+import Navbar from "../components/Navbar";
+import AppartementPage from "../Page/AppartementPage";
+
 
 
 const HeaderFooterLayout = () => {
@@ -19,11 +21,11 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <App />
+                element: <HomePage />
             },
             {
                 path: "/Appartement",
-                element: <h1>Nos appartements</h1>
+                element: <AppartementPage />
             },
             {
                 path: "/A propos",
@@ -34,11 +36,8 @@ export const router = createBrowserRouter([
 ])
 /* J'ai un élement qui s'appel HeaderFooterLayout qui prend une Navbar,Footer Outlet. Outlet c'est l'element que l'on lui passe dans ses children*/
 /*function router() {
-    return (
-        <div>
+    return <div></div>
 
-        </div>
-    )
 }*/
 
 export default router;
