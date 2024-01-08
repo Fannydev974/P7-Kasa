@@ -6,24 +6,28 @@ function AppartementPage() {
         <div>
             <img src="public/Background.png" alt="" />
         </div>
-        <div className="appartement__container">
-            <h1>Crazy loft on the canal Saint-Martin</h1>
-            <h2>Paris, Ile de France</h2>
-            <div className="appartement__tags">
-                <span>Cosy</span>
-                <span>Canal</span>
-                <span>Paris 10</span>
+        <div className="appartement__header">
+            <div className="appartement__container">
+                <h1>Crazy loft on the canal Saint-Martin</h1>
+                <h2>Paris, Ile de France</h2>
+                <div className="appartement__tags">
+                    <span>Cosy</span>
+                    <span>Canal</span>
+                    <span>Paris 10</span>
+                </div>
             </div>
-        </div>
-        <div className="appartement__client__badge">
-            <h3>Alaxandre Dumas</h3>
-            <div className="Badge"></div>
-            <div className="appartement__client__stars">
-                <span> ☆</span>
-                <span> ☆</span>
-                <span> ☆</span>
-                <span> ☆</span>
-                <span> ☆</span>
+            <div className="appartement__client__badge">
+                <div className="appartement__client__details">
+                    <h3>Alaxandre Dumas</h3>
+                    <div className="Badge"></div>
+                </div>
+                <div className="appartement__client__stars">
+                    <span> ☆</span>
+                    <span> ☆</span>
+                    <span> ☆</span>
+                    <span> ☆</span>
+                    <span> ☆</span>
+                </div>
             </div>
         </div>
         <div className="appartement__description">

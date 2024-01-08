@@ -4,8 +4,41 @@
     color: $color-primary;
     padding: 2rem;
 
+    div:first-child {
+        margin-bottom: 1rem;
+    }
+
     h1 {
         font-weight: 500;
+        margin-top: 0;
+    }
+
+    .appartement__header {
+        display: flex;
+        border: 2px solid green;
+
+        .appartement__container {
+            flex-grow: 1; //autorisé a grossir
+            border: 2px solid red;
+        }
+
+        .appartement__client__details {
+            display: flex;
+            border: 2px solid red;
+        }
+
+        .appartement__client__badge {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: $color-grey;
+        }
+
+        h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+            display: grid;
+        }
     }
 
     & .appartement__tags {
@@ -23,3 +56,5 @@
 
     }
 }
+
+////7 33minutes
