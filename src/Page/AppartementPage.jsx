@@ -16,11 +16,12 @@ function AppartementPage() {
                     <span>Paris 10</span>
                 </div>
             </div>
+            <h3>
+                <splan>Alaxandre </splan>
+                <splan>Dumas </splan>
+            </h3>
             <div className="appartement__client__badge">
-                <div className="appartement__client__details">
-                    <h3>Alaxandre Dumas</h3>
-                    <div className="Badge"></div>
-                </div>
+                <img src="public/Host.png" alt="badge" />
                 <div className="appartement__client__stars">
                     <span> ☆</span>
                     <span> ☆</span>
@@ -35,7 +36,7 @@ function AppartementPage() {
             <p>kjirv,opjopjiouhughuhiohknikjijijpinkpok!</p>
         </div>
         <div className="appartement__equipement">
-            <p>Description</p>
+            <p>Equipements</p>
             <p>ggggggggggggggggggggggggggggggggggggg</p>
         </div>
     </div>

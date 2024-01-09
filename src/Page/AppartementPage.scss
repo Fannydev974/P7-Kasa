@@ -3,8 +3,10 @@
 .Appartement-page {
     color: $color-primary;
     padding: 2rem;
+    width: 90%;
 
     div:first-child {
+        //1er enfant div 
         margin-bottom: 1rem;
     }
 
@@ -17,6 +19,7 @@
         display: flex;
         border: 2px solid green;
 
+
         .appartement__container {
             flex-grow: 1; //autorisé a grossir
             border: 2px solid red;
@@ -25,19 +28,31 @@
         .appartement__client__details {
             display: flex;
             border: 2px solid red;
+            display: flex;
+            justify-content: flex-end;
+            width: 0;
         }
 
         .appartement__client__badge {
-            height: 50px;
-            width: 50px;
-            border-radius: 50%;
-            background-color: $color-grey;
+            display: grid;
+            place-content: baseline;
+            place-items: baseline;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
         }
 
         h3 {
             margin-top: 0;
             margin-bottom: 0;
-            display: grid;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .appartement__client__stars {
+            display: flex;
         }
     }
 
@@ -56,5 +71,3 @@
 
     }
 }
-
-////7 33minutes
