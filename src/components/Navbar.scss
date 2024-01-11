@@ -1,13 +1,19 @@
+@use "../scss/variables.scss" as *;
+
 .navbar {
     display: flex;
     width: 90%;
     gap: 2rem;
     align-items: center;
     padding: 2rem;
-    color: #FF6060;
+    color: $color-primary;
     font-weight: 500;
     font-size: 24px;
     font-style: normal;
+
+    @media screen and (width <=768px) {
+        text-transform: uppercase;
+    }
 
     .navbar__logo {
         margin-right: auto;

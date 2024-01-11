@@ -5,69 +5,76 @@
     padding: 2rem;
     width: 90%;
 
-    div:first-child {
-        //1er enfant div 
-        margin-bottom: 1rem;
-    }
 
-    h1 {
-        font-weight: 500;
-        margin-top: 0;
-    }
-
-    .appartement__header {
+    .appartement__collapse {
         display: flex;
-        border: 2px solid green;
+        justify-content: space-between;
+        gap: 76px;
 
-
-        .appartement__container {
-            flex-grow: 1; //autorisé a grossir
-            border: 2px solid red;
-        }
-
-        .appartement__client__details {
-            display: flex;
-            border: 2px solid red;
-            display: flex;
-            justify-content: flex-end;
-            width: 0;
-        }
-
-        .appartement__client__badge {
-            display: grid;
-            place-content: baseline;
-            place-items: baseline;
-
-            img {
-                width: 50px;
-                height: 50px;
-            }
-        }
-
-        h3 {
-            margin-top: 0;
-            margin-bottom: 0;
-            display: flex;
+        @media screen and (width <=768px) {
             flex-direction: column;
-        }
 
-        .appartement__client__stars {
-            display: flex;
         }
     }
 
-    & .appartement__tags {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 150px)); //il se débrouille Au minimum une taille de 100px et au max 150px
-        gap: 1rem;
+    .appartement__description {
+        width: 45%;
 
-        span {
+        p {
+            margin-block: 0;
+        }
+
+        .description__header {
             background-color: $color-primary;
             color: $color-tertiary;
             padding: 0.2em 1em;
-            border-radius: 0.7rem;
-            text-align: center;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                cursor: pointer;
+            }
         }
 
+        .description__content {
+            background-color: $background-light-grey;
+            color: $color-primary;
+            border-radius: 5px;
+            position: relative;
+            top: -0.3rem;
+            z-index: -1; //postion,top,z-index : pour faire passer le <p> en dessous du titre
+        }
     }
+
+    .appartement__equipment {
+        width: 45%;
+
+        p {
+            margin-block: 0;
+        }
+
+        .description__header {
+            background-color: $color-primary;
+            color: $color-tertiary;
+            padding: 0.2em 1em;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                cursor: pointer;
+            }
+        }
+
+        .description__content {
+            background-color: $background-light-grey;
+            color: $color-primary;
+            border-radius: 5px;
+        }
+    }
+
+
 }
