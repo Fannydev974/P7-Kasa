@@ -1,6 +1,6 @@
 .Footer {
-
     width: 100%;
+    margin-top: 139px;
 
 
     .Logo__footer {
@@ -9,6 +9,8 @@
 
         img {
             width: 100%;
+
+            @media screen and (width <=768px) {}
         }
     }
 }
