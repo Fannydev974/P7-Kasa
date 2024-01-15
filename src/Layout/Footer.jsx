@@ -2,14 +2,12 @@ import React from 'react'
 import "./Footer.scss";
 
 
-function Footer() {
+function Footer({ image }) {
     return (
         <div className="Footer">
-            <div className="Logo__footer">
-                <img src="public/logo_footer.png" alt="Logo" />
-            </div>
+            <img src={image} alt="Footer" />
         </div>
-    )
+    );
 }
 
-export default Footer
+export default Footer;
