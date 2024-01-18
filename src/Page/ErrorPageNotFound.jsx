@@ -1,8 +1,8 @@
 import React from 'react'
 import './ErrorPageNotFound.scss';
-import Navbar from "../components/Navbar.jsx";
+import Navbar from "../components/Navbar/Navbar.jsx";
 import { Link } from "react-router-dom";
-import Footer from '../Layout/Footer.jsx';
+import Footer from '../Layout/Footer/Footer.jsx';
 
 export function ErrorPageNotFound() {
     return (

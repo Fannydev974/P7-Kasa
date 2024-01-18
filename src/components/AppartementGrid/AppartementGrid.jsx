@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "./AppartementGrid.scss";
-import AppartementCard from "./AppartementCard.jsx";
+import AppartementCard from "../Cards/AppartementCard";
 
 
 function AppartementGrid() {
@@ -9,7 +9,7 @@ function AppartementGrid() {
     useEffect(fetchAppartements, []);
     //useEffect avec une array vide == exécute(1seule fois) cette fonction au chargement du composant(appartementgrid)
     function fetchAppartements() {
-        fetch("./Datas/data.json")
+        fetch("src/Datas/data.json")
             .then((response) => response.json())
             .then((logements) => setAppartements(logements))
             .catch(console.error);
@@ -25,5 +25,6 @@ function AppartementGrid() {
 }
 
 export default AppartementGrid
+
 
 

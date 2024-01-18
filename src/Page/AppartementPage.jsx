@@ -1,11 +1,11 @@
 import React from 'react'
 import "./AppartementPage.scss";
-import Banner from "../Layout/Banner.jsx";
+import Banner from "../Page/Banner.jsx";
 import ImageBanner from "../assets/Images/AppartementLocation.png";
-import { AppartementHeader } from '../components/AppartementHeader.jsx';
-import { DescriptionCollapse } from "../components/DescriptionCollapse.jsx";
+import { AppartementHeader } from '../components/AppartementHeader/AppartementHeader.jsx';
+import { Collapse } from "../components/Collapse/Collapse.jsx";
 import { useLocation } from "react-router-dom";
-import Footer from '../Layout/Footer.jsx';
+import Footer from '../Layout/Footer/Footer.jsx';
 import FooterImage from '../assets/Images/logo_footer.png';
 
 
@@ -16,7 +16,7 @@ function AppartementPage() {
         <div className="Appartement-page">
             <Banner image={ImageBanner} />
             <AppartementHeader />
-            <DescriptionCollapse />
+            <Collapse />
             <Footer image={FooterImage} />
         </div>
     )

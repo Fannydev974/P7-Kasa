@@ -1,8 +1,8 @@
 import React from 'react'
-import "../components/DescriptionCollapse.scss";
+import "./Collapse.scss";
 
 
-export function DescriptionCollapse() {
+export function Collapse() {
     return (
         <div className="appartement__collapse" >
 
@@ -25,5 +25,5 @@ export function DescriptionCollapse() {
 
     )
 }
-export default DescriptionCollapse
+export default Collapse
 
