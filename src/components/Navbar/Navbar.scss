@@ -1,31 +1,44 @@
-@use "../../scss/variables.scss" as *;
-
 .navbar {
     display: flex;
-    width: 90%;
-    gap: 2rem;
+    justify-content: space-between;
     align-items: center;
-    padding: 2rem;
-    color: $color-primary;
-    font-weight: 500;
-    font-size: 24px;
+    padding: 0;
+    gap: 2rem;
+    /* margin: 0 auto; */
+    color: var(--red);
+    font-weight: 400;
+    min-width: 20%;
+    margin-right: 2px;
     font-style: normal;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
 
-    @media screen and (width <=768px) {
+.navbar a {
+    text-decoration: none;
+    color: #ff6060;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar a.active {
+    text-decoration: underline;
+}
+
+@media only screen and (width <=768px) {
+    .navbar {
+        width: 130px;
+        padding: 0;
+        margin-right: 17px;
+        gap: 0;
+    }
+
+    .navbar a {
         text-transform: uppercase;
-    }
-
-    .navbar__logo {
-        margin-right: auto;
-    }
-
-    & a {
-        text-decoration: none;
-        color: $color-primary;
-
-        &.active,
-        &:hover {
-            text-decoration: underline;
-        }
+        font-size: 12px;
+        font-weight: 500;
+        min-width: 3.5rem;
     }
 }

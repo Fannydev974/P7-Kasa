@@ -1,29 +1,25 @@
-import React from 'react'
-import "./Collapse.scss";
+import React, { useState } from 'react';
+import "./collapse.scss";
 
+export function Collapse(props) {
 
-export function Collapse() {
+    const [isShow, setIsShow] = useState(false);
+
+    const showContent = () => {
+        setIsShow(!isShow);
+    }
+
+    const contentClass = (isShow ? "visible" : "hidden") + " collapse__content";
+    const chevronClass = (isShow ? "fa-chevron-up" : "fa-chevron-down") + " fas";
+
     return (
-        <div className="appartement__collapse" >
-
-            <div className="appartement__description1">
-                <p className="description__header">
-                    <span>Description</span>
-                    <img src="public/vectorHaut.svg"></img>
-
-                </p>
-                <p className="description__content">kjirv,opjopjiouhughuhiohknikjijijpinkpok!</p>
-            </div>
-            <div className="appartement__description2">
-                <p className="description__header">
-                    <span>Equipements</span>
-                    <img src="public/vectorBas.svg"></img>
-                </p>
-                <p className="description__content">ggggggggggggggggggggggggggggggggg</p>
-            </div>
-        </div >
-
-    )
+        <div className='collapse__panel'>
+            <p className='collapse__header' onClick={showContent} >
+                <span>{props.title}</span>
+                <i className={chevronClass}></i>
+            </p>
+            {isShow && <p className={contentClass}>{props.content}</p>}
+        </div>
+    );
 }
-export default Collapse
 

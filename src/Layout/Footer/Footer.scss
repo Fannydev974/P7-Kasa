@@ -1,8 +1,16 @@
-.Footer {
-    width: 100%;
-    margin-top: 100px;
+@use "../../scss/variables.scss" as *;
 
-    img {
-        width: 100%;
-    }
+.footer {
+    background-color: $color-black;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+    min-height: 100px;
+}
+
+.footer__logo {
+    margin-top: 10px;
+}
+
+.footer__text {
+    color: $color-tertiary;
 }

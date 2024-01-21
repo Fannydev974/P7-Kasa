@@ -1,0 +1,16 @@
+@use "../../scss/variables.scss" as *;
+
+.main {
+    padding: 2rem 5rem;
+    color: $color-primary;
+    font-family: "Montserrat", sans-serif;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+/* Mobile */
+@media only screen and (width <=768px) {
+    .main {
+        padding: 1rem;
+    }
+}

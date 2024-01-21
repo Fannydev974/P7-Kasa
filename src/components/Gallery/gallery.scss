@@ -1,0 +1,40 @@
+@use "../../scss/variables.scss" as *;
+
+.home__gallery {
+    background: $grid-background;
+    min-height: 50vh;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2.5rem;
+}
+
+.home__gallery>a {
+    width: 30%;
+}
+
+
+/* Mobile */
+@media only screen and (width <=768px) {
+    .home__gallery {
+        display: flex;
+        justify-content: center;
+        background: none;
+        padding: 0;
+        border-radius: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .home__gallery>a {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (width <=480px) {
+    .card__image {
+        height: 250px;
+    }
+}

@@ -1,44 +1,55 @@
-  @use "../../scss/variables.scss" as *;
+ @use "../../scss/variables.scss" as *;
 
-  .appartement__collapse {
-      display: flex;
-      justify-content: space-between;
-      gap: 76px;
+ .collapse__panel {
+     margin-bottom: 1rem;
+     flex-basis: 50%;
+     cursor: pointer;
+ }
 
-      @media screen and (width <=768px) {
-          flex-direction: column;
+ .collapse__header {
+     background-color: $color-primary;
+     color: $color-tertiary;
+     padding: 0.5em 1em;
+     border-radius: 0.5rem;
+     display: flex;
+     justify-content: space-between;
+ }
 
-      }
-  }
+ .visible .collapse__content {
+     margin-block: 0;
+     min-height: 2rem;
+ }
 
-  .appartement__description1,
-  .appartement__description2 {
-      width: 45%;
+ .collapse__content {
+     background-color: $grid-background;
+     padding: 1rem;
+     border-radius: 0.7rem;
+     position: relative;
+     font-size: 24px;
+     font-weight: 400;
+     top: -2.3rem;
+     z-index: -1;
+     animation: slide-in 2s ease-in-out;
+     list-style-type: none;
+     padding-top: 2rem;
+     height: 65%;
+ }
 
-      p {
-          margin-block: 0;
-      }
+ .fa-chevron-down {
+     font-size: 22px;
+     cursor: pointer;
+     color: $color-tertiary;
+ }
 
-      .description__header {
-          background-color: $color-primary;
-          color: $color-tertiary;
-          padding: 0.2em 1em;
-          border-radius: 5px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+ .fa-chevron-up {
+     font-size: 22px;
+     cursor: pointer;
+     color: $color-tertiary;
+ }
 
-          img {
-              cursor: pointer;
-          }
-      }
-
-      .description__content {
-          background-color: $background-light-grey;
-          color: $color-primary;
-          border-radius: 5px;
-          position: relative;
-          top: -0.3rem;
-          z-index: -1; //postion,top,z-index : pour faire passer le <p> en dessous du titre
-      }
-  }
+ /* Mobile */
+ @media only screen and (width <=768px) {
+     .collapse__panel {
+         margin: 0;
+     }
+ }
