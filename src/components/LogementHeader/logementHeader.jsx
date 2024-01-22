@@ -3,11 +3,11 @@ import './logementHeader.scss';
 
 function LogementHeader({ chooseAppartment }) {
 
-    // Split du nom
-    const name = chooseAppartment.host.name.split(' ');
-    const rating = chooseAppartment.rating;
 
-    return (
+    const name = chooseAppartment.host.name.split(' ');//nom de l'hôte split('') sert a diviser le nom en 2
+    const rating = chooseAppartment.rating;//La notation du logement
+
+    return ( //le titre, l'emplacement, les balises, le nom de l'hôte, la photo de l'hôte et la notation 
         <section className="apartment__header">
             <div className='apartment__title'>
                 <h1>{chooseAppartment.title}</h1>
@@ -18,6 +18,7 @@ function LogementHeader({ chooseAppartment }) {
                     ))}
                 </div>
             </div>
+
             <div className="apartment__owner">
                 <div className="apartment__owner__details">
                     <h3>
@@ -29,7 +30,7 @@ function LogementHeader({ chooseAppartment }) {
                     </div>
                 </div>
                 <div className='apartment__owner__stars'>
-                    {[1, 2, 3, 4, 5].map((num) => (
+                    {[1, 2, 3, 4, 5].map((num) => (//Pour chaque nombre, un élément <span> est créé "on" est ajoutée si la notation du propriétaireest supérieure ou égale à ce nombre
                         <span key={num} className={chooseAppartment.rating >= num ? "on" : ""}>★</span>
                     ))}
                 </div>

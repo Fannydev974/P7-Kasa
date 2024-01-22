@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import './apartment.scss';
 
 function Apartment() {
@@ -9,4 +9,4 @@ function Apartment() {
     )
 }
 
-export default Apartment
+export default Apartment*/

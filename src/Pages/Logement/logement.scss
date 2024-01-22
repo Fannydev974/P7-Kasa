@@ -1,5 +1,7 @@
+@use "../../scss/variables.scss" as *;
+
 .logement-page {
-    color: #ff6060;
+    color: $color-primary;
     font-family: "Montserrat", sans-serif;
     font-weight: normal;
 }
@@ -8,14 +10,14 @@
     font-size: 5rem;
 }
 
-.logement__desc__area {
+.logement__description__collapse {
     display: flex;
     gap: 4rem;
 }
 
 /* Mobile */
 @media only screen and (width <=768px) {
-    .logement__desc__area {
+    .logement__description__collapse {
         flex-direction: column;
         gap: 0.3rem;
     }

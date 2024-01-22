@@ -1,7 +1,6 @@
 import React from 'react';
-//import { Collapse } from '../../Components/Collapse/collapse';
 import { SlideShow } from '../../Components/SlideShow/slideShow';
-import './about.scss';
+import './About.scss';
 import { Collapse } from '../../Components/Collapse/collapse';
 
 
@@ -24,11 +23,3 @@ function About() {
 }
 
 export default About
-
-/*       {aboutData.map(data => {
-                    return (
-                        <div key={data.id} className='collapse__panel'>
-                            <Collapse title={data.title} content={data.content} />
-                        </div>
-                    )
-                })} ligne 16*/
