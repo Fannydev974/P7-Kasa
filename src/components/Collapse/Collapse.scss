@@ -21,6 +21,7 @@
      min-height: 2rem;
  }
 
+
  .collapse__content {
      background-color: $grid-background;
      padding: 1rem;
@@ -30,19 +31,18 @@
      font-weight: 400;
      top: -2.3rem;
      z-index: -1;
-     animation: slide-in 2s ease-in-out;
+     //animation: slide-in 2s ease-in-out;
      list-style-type: none;
      padding-top: 2rem;
      height: 65%;
+
+     @media only screen and (width <=768px) {
+         font-size: 17px;
+     }
  }
 
- .fa-chevron-down {
-     font-size: 22px;
-     cursor: pointer;
-     color: $color-tertiary;
 
- }
-
+ .fa-chevron-down,
  .fa-chevron-up {
      font-size: 22px;
      cursor: pointer;
