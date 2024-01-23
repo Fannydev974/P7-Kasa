@@ -1,21 +1,20 @@
 import React from 'react';
-import { SlideShow } from '../../Components/SlideShow/slideShow';
+//import { SlideShow } from '../../Components/SlideShow/slideShow';
 import './About.scss';
 import { Collapse } from '../../Components/Collapse/collapse';
+import ImageBanner from '../../Components/imageBanner';
+//import Banner from '../../Layout/Banner/banner';
+import aboutBanner from '../../assets/background.jpg'
 
 
-
-function About({ image }) {
+function About() {
 
     return (
         <>
 
+            <img src={aboutBanner} alt="image banner" />
+            {/*<div className='about__img'></div>*/}
 
-            <div className='about__img'>
-
-                <SlideShow />
-
-            </div >
             <div className="about__container">
                 <Collapse title="Fiabilité" content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes." />
                 <Collapse title="Respect" content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." />
@@ -27,3 +26,5 @@ function About({ image }) {
 }
 
 export default About
+
+// <SlideShow />

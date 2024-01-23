@@ -3,10 +3,12 @@ import './homePage.scss';
 import Banner from '../..//Layout/Banner/banner';
 import Gallery from '../../Components/Gallery/gallery';
 
-function HomePage() {
+
+function HomePage({ imageUrl }) {
     return (
         <div className='home'>
-            <Banner />
+            {/* <Banner />*/}
+            <Banner image={imageUrl} />
             <Gallery />
         </div>
     );

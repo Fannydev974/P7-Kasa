@@ -4,20 +4,29 @@
     position: relative;
     background-position: center;
     max-width: 100%;
-    height: 250px;
+    height: 150px;
     display: grid;
     margin: auto;
     place-items: center;
     color: $color-tertiary;
     border-radius: 1rem;
-    background-size: cover;
-    background-image: url("../../assets/banner.png");
+    //background-size: cover;
+    //background-image: url("../../assets/banner.png");
     margin-bottom: 2rem;
 }
 
+/*.banner img {
+    width: 1240px;
+    height: 223px;
+    background: cover;
+    position: absolute;
+    margin-bottom: 0px;
+    margin-top: 50px;
+}*/
+
 .banner::before {
     background: $color-black;
-    position: absolute;
+    // position: absolute;
     content: "";
     inset: 0;
     border-radius: 1rem;
@@ -48,6 +57,7 @@
         font-size: 24px;
         width: 60%;
         left: 10px;
+        color: $color-tertiary;
     }
 }
 
