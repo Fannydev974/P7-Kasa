@@ -1,12 +1,12 @@
 import React from 'react';
-import './About.scss';
+import './about.scss';
 import { Collapse } from '../../Components/Collapse/collapse';
 import Banner from "../../Layout/Banner/banner";
-
+import aboutImage from '../../assets/aboutbannerDesktop-mobile.png';
 
 
 const About = () => {
-    const aboutImage = 'src/assets/aboutbannerDesktop-mobile.png';
+    //const aboutImage = 'src/assets/aboutbannerDesktop-mobile.png';
 
     return (
         <>

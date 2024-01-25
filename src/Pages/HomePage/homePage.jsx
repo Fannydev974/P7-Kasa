@@ -5,9 +5,12 @@ import Banner from '../../Layout/Banner/banner';
 
 
 function HomePage() {
+    const bannerImage = 'src/assets/banner.png';
+    const bannerTitle = 'Chez vous, partout et ailleurs';
+
     return (
         <div className='home'>
-            <Banner />
+            <Banner image={bannerImage} title={bannerTitle} />
             <Gallery />
         </div>
     );

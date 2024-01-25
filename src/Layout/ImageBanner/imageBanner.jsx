@@ -1,7 +1,7 @@
 import React from 'react'
 import './imageBanner.scss';
 import Banner from '../../Layout/Banner/banner';
-import imageBanner from '../../Layout/ImageBanner/imageBanner';
+
 
 const imageBanner = () => {
 
