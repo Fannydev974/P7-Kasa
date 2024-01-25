@@ -6,17 +6,16 @@
     height: 150px;
     display: grid;
     margin: auto;
-    color: black;
     border-radius: 1rem;
-    //background-size: cover;
-    //background-image: url("../../assets/banner.png");
+    object-fit: cover;
     margin-bottom: 10rem;
 }
 
+
 .banner img {
-    width: 1240px;
-    height: 223px;
-    //background-size: cover;
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
     margin-top: 50px;
     position: absolute;
     border-radius: 20px;
@@ -34,40 +33,44 @@ h2 {
     align-items: flex-end;
     height: 150px;
     font-size: xxx-large;
+    font-weight: 500;
     color: $color-tertiary;
 }
 
-/*.banner::before {
-    background: $color-black;
-    position: absolute;
-    content: "";
-    inset: 0;
-    border-radius: 1rem;
-    opacity: 0.3;
-}*/
 
-.banner__text {
-    position: relative;
-    font-style: normal;
-    font-size: 48px;
-    font-weight: 500;
-    align-items: center;
-    color: black;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-top: 86px;
+/* Mobile */
+@media only screen and (width <=1024px) {
+    .banner {
+        margin-bottom: 6rem;
+    }
+
+
+    h2 {
+        height: 120px;
+        font-size: xx-large;
+        font-weight: 500;
+    }
 }
+
+
 
 /* Mobile */
 @media only screen and (width <=768px) {
     .banner {
+        margin-bottom: 60px;
+        width: 100%;
         place-items: flex-start;
         height: 140px;
         display: flex;
         align-items: center;
     }
 
+    h2 {
+        align-items: center;
+        font-size: xx-large;
+        margin-top: 70px;
+        margin-left: 126px;
+    }
 
     .banner__text {
         display: flex;
@@ -80,11 +83,22 @@ h2 {
 
 @media only screen and (width <=480px) {
     .banner {
-        height: 100px;
+        height: 50px;
+
     }
 
-    .banner__text {
-        font-size: 22px;
+    .banner img {
+        border-radius: 10px;
+        height: 74px;
+        object-fit: cover;
+    }
+
+    h2 {
+        margin-left: 45px;
+        font-size: large;
+        border-radius: 5px;
         width: 62%;
     }
+
+
 }
