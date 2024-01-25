@@ -6,8 +6,6 @@ import aboutImage from '../../assets/aboutbannerDesktop-mobile.png';
 
 
 const About = () => {
-    //const aboutImage = 'src/assets/aboutbannerDesktop-mobile.png';
-
     return (
         <>
             <div className='about__img'>
