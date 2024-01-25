@@ -1,14 +1,13 @@
 import React from 'react';
 import './homePage.scss';
-import Banner from '../..//Layout/Banner/banner';
 import Gallery from '../../Components/Gallery/gallery';
+import Banner from '../../Layout/Banner/banner';
 
 
-function HomePage({ imageUrl }) {
+function HomePage() {
     return (
         <div className='home'>
-            {/* <Banner />*/}
-            <Banner image={imageUrl} />
+            <Banner />
             <Gallery />
         </div>
     );

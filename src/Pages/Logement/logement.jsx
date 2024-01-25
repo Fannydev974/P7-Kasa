@@ -9,8 +9,6 @@ import error from '../../Components/Error/error';
 
 function Logement() {
 
-
-
     const idApartment = useParams("id").id;
     const chooseAppartment = datas.filter(data => data.id === idApartment)[0];
 
