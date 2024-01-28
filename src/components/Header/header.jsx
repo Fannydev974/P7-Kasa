@@ -22,3 +22,4 @@ function Header() {
 }
 
 export default Header
+//NavLink est utilisé pour créer un lien vers la page d'accueil ("/")

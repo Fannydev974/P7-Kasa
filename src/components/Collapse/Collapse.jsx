@@ -3,14 +3,15 @@ import "./collapse.scss";
 
 export function Collapse(props) {
 
-    const [isShow, setIsShow] = useState(false);
+    const [isShow, setIsShow] = useState(false);//isShow gère l'état d'affichage du contenu (caché ou visible).
 
-    const showContent = () => {
+    const showContent = () => {//showContent est appelée lorsqu'on clique sur l'en-tête,elle inverse l'état de isShow entre true et false.
         setIsShow(!isShow);
     }
 
     const contentClass = (isShow ? "visible" : "hidden") + " collapse__content";
     const chevronClass = (isShow ? "fa-chevron-up" : "fa-chevron-down") + " fas";
+    //détermine les classes CSS en fonction de l'état de isShow.
 
     return (
         <div className='collapse__panel'>
@@ -20,6 +21,7 @@ export function Collapse(props) {
             </p>
             {isShow && <p className={contentClass}>{props.content}</p>}
         </div>
+        //Si isShow est vrai, un autre paragraphe avec la classe CSS collapse__content est rendu, affichant le contenu (props.content).
     );
 }
 

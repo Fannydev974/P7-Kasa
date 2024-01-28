@@ -7,7 +7,7 @@ import datas from '../../data/data.json'
 function Gallery() {
     return (
         <section className='home__gallery'>
-            {datas.map(data => {
+            {datas.map(data => {//.map() est utilisée pour itérer sur chaque élément de datas 
                 return (
                     <Card
                         key={data.id}

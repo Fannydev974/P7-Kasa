@@ -5,16 +5,17 @@ import datas from '../../data/data.json';
 import { SlideShow } from '../../Components/SlideShow/slideShow';
 import { useParams } from 'react-router-dom';
 import LogementHeader from '../../Components/LogementHeader/logementHeader';
-import error from '../../Components/Error/error';
+
 
 function Logement() {
 
-    const idApartment = useParams("id").id;
+    const idApartment = useParams("id").id;//utilisé pour extraire le paramètre d'ID de l'URL.
     const chooseAppartment = datas.filter(data => data.id === idApartment)[0];
+    //pour rechercher le logement correspondant à l'ID extrait dans le fichier JSON
 
     if (!chooseAppartment) {
         return <error />
-    }
+    }//S'il n'y a pas de logement correspondant à l'ID, le composant Error est renvoyé.
 
     return (
 

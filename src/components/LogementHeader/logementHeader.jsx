@@ -5,7 +5,7 @@ function LogementHeader({ chooseAppartment }) {
 
 
     const name = chooseAppartment.host.name.split(' ');//nom de l'hôte split('') sert a diviser le nom en 2
-    const rating = chooseAppartment.rating;//La notation du logement
+
 
     return ( //le titre, l'emplacement, les balises, le nom de l'hôte, la photo de l'hôte et la notation 
         <section className="apartment__header">
@@ -13,7 +13,7 @@ function LogementHeader({ chooseAppartment }) {
                 <h1>{chooseAppartment.title}</h1>
                 <p>{chooseAppartment.location}</p>
                 <div className="apartment__tags">
-                    {chooseAppartment.tags.map((tag) => (
+                    {chooseAppartment.tags.map((tag) => (//map pour itérer sur le tableau de balises et créer un élément <span> pour chaque balise.
                         <span key={tag}>{tag}</span>
                     ))}
                 </div>

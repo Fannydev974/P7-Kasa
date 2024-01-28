@@ -9,3 +9,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>,
 )
 
+//ce code configure un "root"(racine)tout le contenu sera injecté dans le DOM,
+// Le mode strict de React est activé pour effectuer des vérifications supplémentaires.

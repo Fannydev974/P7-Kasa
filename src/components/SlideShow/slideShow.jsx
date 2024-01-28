@@ -6,7 +6,7 @@ export function SlideShow(props) {
 
     const pictures = props.pictures;
 
-    const [currentPicture, setCurrentPicture] = useState(0);//currentPicture est utilisé pour suivre l'index de l'image actuellement affichée dans le caroussel.
+    const [currentPicture, setCurrentPicture] = useState(0);//useState pour suivre l'index de l'image actuellement affichée dans le carrousel (currentPicture).
 
     const getClassName = (index) => {
         if (index === currentPicture) return "show";
