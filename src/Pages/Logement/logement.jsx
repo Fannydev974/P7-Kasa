@@ -5,7 +5,7 @@ import datas from '../../data/data.json';
 import { SlideShow } from '../../Components/SlideShow/slideShow';
 import { useParams } from 'react-router-dom';
 import LogementHeader from '../../Components/LogementHeader/logementHeader';
-
+import { ErrorPage } from '../../Pages/ErrorPage/errorPage';
 
 function Logement() {
 
@@ -13,8 +13,9 @@ function Logement() {
     const chooseAppartment = datas.filter(data => data.id === idApartment)[0];
     //pour rechercher le logement correspondant à l'ID extrait dans le fichier JSON
 
+
     if (!chooseAppartment) {
-        return <error />
+        return <ErrorPage />
     }//S'il n'y a pas de logement correspondant à l'ID, le composant Error est renvoyé.
 
     return (

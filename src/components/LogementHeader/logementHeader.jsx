@@ -30,7 +30,8 @@ function LogementHeader({ chooseAppartment }) {
                     </div>
                 </div>
                 <div className='apartment__owner__stars'>
-                    {[1, 2, 3, 4, 5].map((num) => (//Pour chaque nombre, un élément <span> est créé "on" est ajoutée si la notation du propriétaireest supérieure ou égale à ce nombre
+                    {[1, 2, 3, 4, 5].map((num) => (//Pour chaque nombre, un élément <span> est créé "on" est ajoutée si 
+                        //la notation du propriétaireest supérieure ou égale à ce nombre
                         <span key={num} className={chooseAppartment.rating >= num ? "on" : ""}>★</span>
                     ))}
                 </div>

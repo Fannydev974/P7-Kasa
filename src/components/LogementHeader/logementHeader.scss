@@ -67,6 +67,14 @@
 }
 
 /* Mobile */
+
+@media only screen and (width <=1005px) {
+    .apartment__title h1 {
+        font-size: 23px;
+        font-weight: 500;
+    }
+}
+
 @media only screen and (width <=768px) {
     .apartment__header {
         flex-direction: column;

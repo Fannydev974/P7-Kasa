@@ -19,8 +19,20 @@
 }
 
 /* Mobile */
+@media only screen and (width <=1024px) {
+
+    .about__container {
+        padding-top: 6rem;
+    }
+}
+
 @media only screen and (width <=768px) {
     .about__container {
+        padding-top: 5rem;
         padding-inline: 0;
+    }
+
+    .about__img {
+        padding-top: 50px;
     }
 }

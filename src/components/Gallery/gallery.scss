@@ -9,7 +9,13 @@
     flex-wrap: wrap;
     gap: 1.5rem;
     padding: 2.5rem;
+
+    @media only screen and (width <=870px) {
+        gap: 40px;
+    }
+
 }
+
 
 .home__gallery>a {
     width: 30%;
@@ -17,7 +23,7 @@
 
 
 /* Mobile */
-@media only screen and (width <=768px) {
+@media only screen and (width <=798px) {
     .home__gallery {
         display: flex;
         justify-content: center;

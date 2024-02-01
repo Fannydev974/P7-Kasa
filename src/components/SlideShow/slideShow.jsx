@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import './slideShow.scss';
-import aboutBanner from '../../assets/background.jpg'
+
 
 export function SlideShow(props) {
 
     const pictures = props.pictures;
 
-    const [currentPicture, setCurrentPicture] = useState(0);//useState pour suivre l'index de l'image actuellement affichée dans le carrousel (currentPicture).
+    const [currentPicture, setCurrentPicture] = useState(0);//useState pour suivre l'index de l'image actuellement
+    // affichée dans le carrousel(currentPicture).
 
     const getClassName = (index) => {
         if (index === currentPicture) return "show";
@@ -35,12 +36,12 @@ export function SlideShow(props) {
     // Carousel ou image par défaut
     const CarouselorImgDefault = () => {
         if (!isPicturesOk()) {
-            return <img src={aboutBanner} alt="image banner" className='show' />
+            return
         }
         return pictures.map((picture, index) => (
             <img key={picture} src={picture} alt="" className={getClassName(index)}></img>
         ));
-    };//rend soit le caroussel des images fournies (pictures), soit l'image par défaut (aboutBanner) si aucune image n'est fournie.
+    };//rend soit le caroussel des images fournies (pictures),
 
 
     return (
