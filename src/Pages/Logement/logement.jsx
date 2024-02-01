@@ -5,7 +5,7 @@ import datas from '../../data/data.json';
 import { SlideShow } from '../../Components/SlideShow/slideShow';
 import { useParams } from 'react-router-dom';
 import LogementHeader from '../../Components/LogementHeader/logementHeader';
-import { ErrorPage } from '../../Pages/ErrorPage/errorPage';
+
 
 function Logement() {
 
@@ -15,7 +15,7 @@ function Logement() {
 
 
     if (!chooseAppartment) {
-        return <ErrorPage />
+        return <Error />
     }//S'il n'y a pas de logement correspondant à l'ID, le composant Error est renvoyé.
 
     return (

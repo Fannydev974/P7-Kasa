@@ -18,7 +18,14 @@
     height: 5rem;
 }
 
-/* Mobile */
+/*RESPONSIF*/
+@media only screen and (width <=1240px) {
+
+    .about__img {
+        padding-bottom: 3rem;
+    }
+}
+
 @media only screen and (width <=1024px) {
 
     .about__container {
@@ -28,7 +35,7 @@
 
 @media only screen and (width <=768px) {
     .about__container {
-        padding-top: 5rem;
+        padding-top: 3rem;
         padding-inline: 0;
     }
 

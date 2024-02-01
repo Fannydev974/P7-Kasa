@@ -33,44 +33,30 @@ h1 {
     height: 264px;
 }
 
-/*h2 {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    align-items: center;
-    height: 150px;
-    font-size: xxx-large;
-    font-weight: 500;
-    color: $color-tertiary;
-    width: 100%;
-}*/
-@media only screen and (width <=1240px) {
-    h1 {
-        height: 230px;
-    }
-}
-
+/* RESPONSIF */
 @media only screen and (width <=1240px) {
     h1 {
         height: 200px;
+        font-size: xxx-large;
+        font-weight: 500;
     }
-}
 
-/* Mobile */
-@media only screen and (width <=1024px) {
     .banner {
         margin-bottom: 6rem;
     }
+}
 
-
+@media only screen and (width <=1024px) {
     h1 {
-
         font-size: xx-large;
-        font-weight: 500;
     }
 }
 
-
+@media only screen and (width <=800px) {
+    h1 {
+        align-items: center;
+    }
+}
 
 /* Mobile */
 @media only screen and (width <=768px) {
@@ -87,7 +73,6 @@ h1 {
         align-items: center;
         font-size: xx-large;
         margin-top: 70px;
-        margin-left: 126px;
     }
 
     .banner__text {
